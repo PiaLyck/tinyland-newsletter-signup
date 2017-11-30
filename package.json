@@ -1,0 +1,23 @@
+{
+  "name": "tinyland-newsletter-signup",
+  "version": "1.0.0",
+  "description": "Newsletter signup form with Node.js, Express.js, and the MailChimp API.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiaLyck/tinyland-newsletter-signup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiaLyck/tinyland-newsletter-signup/issues"
+  },
+  "homepage": "https://github.com/PiaLyck/tinyland-newsletter-signup#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
