@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# Sensitive stuff such as API keys etc.
+secretstuff.js

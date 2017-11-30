@@ -25,6 +25,6 @@ app.listen(3111, function () {
 
 // Root
 app.post('/', function (req, res) {
-    console.log(req.body);
+    console.log(req.body.email);
     res.end('SUCCESSSS!!!');
 });

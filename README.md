@@ -3,6 +3,9 @@ Newsletter signup form with Node.js, Express.js, and the MailChimp API.
 
 # + 
 
+### Postman
+...for building API requests
+
 ### Nodemon
 ...for watching changes in Node files and stop and restart our Node server (Express)
 
