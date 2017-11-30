@@ -16,6 +16,6 @@ app.listen(3111, function () {
 });
 
 // Root
-/* app.get('/', function (req, res) {
-    res.end('yoooooo');
-}); */
+app.post('/', function (req, res) {
+   res.end('SUCCESSSS!!!');
+});

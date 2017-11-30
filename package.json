@@ -19,5 +19,8 @@
   "homepage": "https://github.com/PiaLyck/tinyland-newsletter-signup#readme",
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "webpack": "^3.8.1"
   }
 }
