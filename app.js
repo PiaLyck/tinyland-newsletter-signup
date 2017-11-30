@@ -7,9 +7,17 @@ and adding users emails to MailChimp.
 
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 
 // Middleware
 app.use(express.static(__dirname + '/public'))
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
+
 
 app.listen(3111, function () {
     console.log('Listening on port 3111');
@@ -17,5 +25,6 @@ app.listen(3111, function () {
 
 // Root
 app.post('/', function (req, res) {
-   res.end('SUCCESSSS!!!');
+    console.log(req.body);
+    res.end('SUCCESSSS!!!');
 });

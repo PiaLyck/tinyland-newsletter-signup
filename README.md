@@ -6,6 +6,9 @@ Newsletter signup form with Node.js, Express.js, and the MailChimp API.
 ### Nodemon
 ...for watching changes in Node files and stop and restart our Node server (Express)
 
+### Bodyparser
+...for parsing incoming request bodies in a middleware before handling (available under the req.body property)
+
 ### Webpack
 ...for module bundling and JavaScript minification
 

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/PiaLyck/tinyland-newsletter-signup#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "jquery": "^3.2.1"
   },

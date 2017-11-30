@@ -69,22 +69,28 @@
 
 var $ = __webpack_require__(1);
 
+
 $('form').submit(function (event) {
+    // Get form inputs
+    var userEmail = $('#email-address').val();
+    var firstName = $('#first-name').val();
+    var lastName = $('#last-name').val();
+    
+    // Prevent page from reloading
     event.preventDefault();
-    console.log("submit is called");
+
+    // Call app.js's app.post('/')... method
     $.ajax({
         url: '/',
         type: 'POST',
         data: {
-            email: 'pia@pia.com',
+            email: userEmail
         },
         success: function (response) {
             console.log(response);
         }
     });
 });
-
-
 
 /***/ }),
 /* 1 */
