@@ -8,13 +8,18 @@
     <title>Tinyland</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
-        <h2>Hej</h2>
-        <h4>Skriv dig op og få tilsendt en mail, når siden er færdig:</h4>
-        
+        <div class="center-block">
+            <img class="img-responsive" src="#" alt="Tinyland.dk logo">
+            <h2>Velkommen til Tinyland.dk</h2>
+            <p>Her kommer forklarende tekst - Hvad, Hvordan, Hvorfor?</p>
+            <img class="img-responsive" src="img/tinyhouse1.jpg" alt="Tiny House af det danske firma Tiny House Living">
+            <h5>Siden er stadig under udvikling, men skriv dig op herunder og få tilsendt en mail når siden er færdig.</h5>
+        </div>
         <form action="/" method="post">
             <div class="form-group">
                 <label for="first-name">Fornavn:</label>
@@ -28,12 +33,16 @@
             <div class="form-group">
                 <label for="email-address">Email:</label>
                 <input type="email" class="form-control" id="email-address" aria-describedby="emailHelp" placeholder="">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small id="emailHelp" class="form-text text-muted">Vi deler selvfølgelig ikke din emailadresse med andre.</small>
             </div>
 
             <div class="form-check">
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input"> Check me out
+                    <input type="checkbox" id="tenant" class="form-check-input"> Jeg er interesseret i at bo i et Tiny House
+                </label>
+                <br>
+                <label class="form-check-label">
+                    <input type="checkbox" id="landlord" class="form-check-input"> Jeg er interesseret i at udleje en grund til et eller flere Tiny Houses
                 </label>
             </div>
             <input type="submit" class="btn btn-primary" value="Submit">

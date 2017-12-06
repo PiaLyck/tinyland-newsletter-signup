@@ -1,0 +1,11 @@
+body {
+    margin-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+img {
+    /* Make responsive */
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
