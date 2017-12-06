@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon app.js",
     "webpack": "webpack --config webpack.config.js",
+    "dev": "npm-run-all --parallel webpack nodemon",
     "start": "node app.js",
     "deploy": "gcloud app deploy"
   },
