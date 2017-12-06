@@ -14,7 +14,7 @@ Deloyed to Google Cloud using Google App Engine.
 ...for parsing incoming request bodies in a middleware before handling (available under the req.body property)
 
 ### Webpack
-...for module bundling and JavaScript minification
+...for module loading, bundling and JavaScript minification
 
 ### AJAX
 ...
