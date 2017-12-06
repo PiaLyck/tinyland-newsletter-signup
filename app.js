@@ -21,9 +21,9 @@ app.use(bodyParser.urlencoded({
 // parse application/json
 app.use(bodyParser.json())
 
-
-app.listen(3111, function () {
-    console.log('Listening on port 3111');
+var server = app.listen(process.env.PORT || '3111', function () {
+    console.log('App listening on Port %s', server.address().port);
+    console.log('Press Ctrl+C to quit');
 });
 
 // Root
@@ -32,10 +32,6 @@ app.post('/', function (req, res) {
     res.end('SUCCESSSS!!!');
 });
 
-var server = app.listen(process.env.PORT || '3111', function () {
-    console.log('App listening on Port %s', server.address().port);
-    console.log('Press Ctrl+C to quit');
-});
 
 function addEmailToMailChimp(email, firstname, lastname) {
     const request = require('request');
