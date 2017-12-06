@@ -32,10 +32,15 @@ app.post('/', function (req, res) {
     res.end('SUCCESSSS!!!');
 });
 
+var server = app.listen(process.env.PORT || '3111', function () {
+    console.log('App listening on Port %s', server.address().port);
+    console.log('Press Ctrl+C to quit');
+});
+
 function addEmailToMailChimp(email, firstname, lastname) {
     const request = require('request');
     const config = require('./secretstuff'); // Require sensitive API keys and auth from .gitignored file
-    
+
     var options = {
         method: 'POST',
         url: config.mailchimpUrl,
