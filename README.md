@@ -1,6 +1,6 @@
 ## Tinyland.dk newsletter form
 Newsletter signup form with Node.js, Express.js, and the MailChimp API.
-Deloyed to Google Cloud using Google App Engine.
+Deployed to Google Cloud using Google App Engine.
 
 # + 
 
